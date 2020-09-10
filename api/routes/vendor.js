@@ -4,19 +4,17 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     res.status(200).json({
-        message: 'Manejo de solicitudes GET para /vendors'
+        message: 'Proveedores',
+        prov_1: 'casa',
+        prov_2: 'bosch',
+        prov_3: 'bosch',
+        prov_4: 'bSJ'
     });
 });
 
 router.post('/', (req, res, next) => {
     res.status(200).json({
         message: 'Manejo de solicitudes POST para /vendors'
-    });
-});
-
-router.get('/all', (req, res, next) => {
-    res.status(200).json({
-        
     });
 });
 
